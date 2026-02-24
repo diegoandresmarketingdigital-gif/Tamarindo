@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamarindo Cell | Equipos Apple en Barquisimeto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            scroll-behavior: smooth;
+        }
+
+        .logo-branding-bar {
+            background-color: #ffffff;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #f3f3f3;
+        }
+
+        .main-brand-logo {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .announcement-bar {
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 10px;
+            padding: 10px;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .apple-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: saturate(180%) blur(20px);
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .logo-text-styled {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            letter-spacing: -0.05em;
+            text-transform: lowercase;
+            font-size: 1.2rem;
+            color: #000;
+        }
+
+        .hero-title {
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 3.2rem; }
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: 28px;
+            overflow: hidden;
+            border: 1px solid #efefef;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+        }
+
+        .btn-primary {
+            background: #000000;
+            color: #ffffff;
+            padding: 20px 36px;
+            border-radius: 18px;
+            font-weight: 700;
+            text-align: center;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        .img-container {
+            position: relative;
+            background-color: #f5f5f7;
+            overflow: hidden;
+        }
+
+        .product-img, .hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .badge-trust {
+            background: #f4f4f5;
+            color: #18181b;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .whatsapp-nav-btn {
+            background-color: #25D366;
+            color: #fff;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo Superior -->
+    <div class="logo-branding-bar">
+        <img src="https://i.postimg.cc/KKhsvW18/Whats-App-Image-2026-02-24-at-12-29-39-PM.jpg" alt="[Logotipo de Tamarindo Cell]" class="main-brand-logo">
+    </div>
+
+    <!-- Barra de Anuncio -->
+    <div class="announcement-bar">
+        📦 Envíos a toda Venezuela • Delivery en Barquisimeto y Cabudare
+    </div>
+
+    <!-- Navegación -->
+    <nav class="apple-nav px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="logo-text-styled">@tamarindocell</span>
+            <a href="https://wa.me/58424543903" target="_blank" class="whatsapp-nav-btn">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-16 pb-12 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="badge-trust mb-8">
+                <i class="fas fa-certificate text-blue-500"></i> Calidad Premium Garantizada
+            </div>
+            <h1 class="hero-title text-6xl md:text-8xl font-bold mb-8">
+                Tu iPhone ideal, <br>sin complicaciones.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-500 mb-12 font-light max-w-2xl mx-auto">
+                Especialistas en Apple para Barquisimeto. Equipos nuevos y seminuevos verificados.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-5">
+                <a href="#productos" class="btn-primary">Ver Catálogo</a>
+                <a href="https://wa.me/58424543903" class="bg-white border-2 border-black px-10 py-5 rounded-[18px] font-bold hover:bg-black hover:text-white transition-all">Cotizar Importación</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Imagen Principal Hero -->
+    <div class="max-w-6xl mx-auto mb-20 px-4">
+        <div class="rounded-[40px] overflow-hidden shadow-2xl border border-gray-100 bg-white">
+            <img src="https://i.postimg.cc/sDJKg728/Apple-i-Phone-15-Pro-lineup-hero-230912-Full-Bleed-Image-jpg-large.jpg" alt="[Imagen de iPhone 15 Pro de alta calidad]" class="hero-img">
+        </div>
+    </div>
+
+    <!-- Catálogo -->
+    <section id="productos" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-6xl font-bold italic uppercase mb-12 text-center md:text-left">Catálogo</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Equipos -->
+                <div class="product-card">
+                    <div class="img-container aspect-square">
+                        <img src="https://i.postimg.cc/vHvXZfmS/Apple-i-Phone-15-Pro-lineup-color-lineup-geo-230912-big-jpg-large.jpg" alt="[Equipos iPhone disponibles]" class="product-img">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-2">Equipos</h4>
+                        <p class="text-gray-500 mb-6 italic">Disponibles desde el <strong>iPhone 11 hasta el 17 Pro Max</strong>.</p>
+                        <a href="https://wa.me/58424543903" class="btn-primary w-full">Consultar Precio</a>
+                    </div>
+                </div>
+
+                <!-- Accesorios -->
+                <div class="product-card">
+                    <div class="img-container aspect-square">
+                        <img src="https://i.postimg.cc/Jz4xD0y6/61010-125888-Apple-Silicone-cases-in-fan-xl.jpg" alt="[Accesorios Apple originales]" class="product-img">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-2">Accesorios</h4>
+                        <p class="text-gray-500 mb-6 italic">Silicon Cases de alta calidad y MagSafe.</p>
+                        <a href="https://wa.me/58424543903" class="btn-primary w-full">Ver Colores</a>
+                    </div>
+                </div>
+
+                <!-- Cargadores -->
+                <div class="product-card">
+                    <div class="img-container aspect-square">
+                        <img src="https://i.postimg.cc/8CGfx6Tw/cargador.png" alt="[Cargador de iPhone original]" class="product-img">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-2">Carga Rápida</h4>
+                        <p class="text-gray-500 mb-6 italic">Adaptador 20W USB-C Versión LATAM.</p>
+                        <a href="https://wa.me/58424543903" class="btn-primary w-full">Comprar ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Importación -->
+    <section class="py-24 px-6 bg-zinc-50 rounded-[50px] mx-4 mb-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="max-w-2xl mx-auto h-64 md:h-96 mb-10 rounded-[32px] overflow-hidden shadow-lg border border-white">
+                <img src="https://i.postimg.cc/QxqSd1Mq/photo-1693748096733-962d7cc21fde.avif" alt="[Imagen de importación de iPhone]" class="w-full h-full object-cover">
+            </div>
+            <h2 class="text-5xl md:text-7xl font-bold mb-8 italic uppercase">Importación Directa 🛬</h2>
+            <p class="text-xl text-gray-500 mb-10 leading-relaxed font-light">
+                Compramos tu equipo en tiendas oficiales de USA. Seguridad total y entrega en Barquisimeto en tiempo récord.
+            </p>
+            <a href="https://wa.me/58424543903" class="btn-primary px-16">Iniciar Cotización</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 border-t border-zinc-100 text-center">
+        <div class="flex justify-center gap-10 mb-10 text-gray-400 text-3xl">
+            <a href="https://instagram.com/tamarindocell" target="_blank" class="hover:text-black transition-colors"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@tamarindocell" target="_blank" class="hover:text-black transition-colors"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/58424543903" target="_blank" class="hover:text-black transition-colors"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-4">Tamarindo Cell © 2026</p>
+        <p class="text-[10px] text-gray-300">BARQUISIMETO • LARA</p>
+    </footer>
+
+</body>
+</html>
